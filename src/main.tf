@@ -1,4 +1,4 @@
-#### Networks
+###### Networks
 
 resource "yandex_vpc_network" "netology" {
   name = var.vpc_name
@@ -94,7 +94,7 @@ resource "yandex_compute_instance" "public_vm" {
   }
 }
 
-## Route table
+####### Route table
 
 resource "yandex_vpc_route_table" "nat_route_table" {
   name       = "nat-route-table"
